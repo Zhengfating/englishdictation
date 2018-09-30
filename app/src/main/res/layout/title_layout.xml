@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:background="@drawable/back_w_btn"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:background="@drawable/add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:text="听力"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/count_text"
+        android:text="(0)"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title_text"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+</RelativeLayout>
